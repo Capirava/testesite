@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'system-ui';
+}
+
+p {
+    border-radius: 10px;
+} 
+
+a {
+    position: relative;
+    cursor: default;
+    text-decoration: none;
+    top: 60px;
+}
+
+.flex-container {
+    background-image: url("../Imagens/background.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.info-box {
+    height: 530px;
+    width: 550px;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.0);
+}
+
+.info-container {
+    display: grid;
+    margin: 15px;
+    grid-template-columns: auto auto auto 1fr;
+    gap: 10px;
+}
+
+.profile-box {
+    height: 530px;
+    width: 250px;
+    background-color: rgb(233, 233, 233);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1.0);
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.foto {
+    width: 170px;
+    height: 170px;  
+    border-radius: 100px;
+}
+
+.edicao {
+    padding: 5px 0 0 5px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.nome-usuario {
+    background-color: white;
+    padding: 8px;
+}
+
+hr {
+    grid-column: 1 / 5;
+    border-style: solid;
+    border-color: rgb(233, 233, 233);
+    width: 100%;
+}
+
+.infos {
+    border: solid rgb(200, 200, 200);
+    border-width: 2px;
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    outline: 2;
+    border-radius: 10px;
+}
+
+.botao {
+    padding: 15px;
+    color: white;
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: white;
+    background-color: black;
+    font-weight: bold;
+    transition: all 0.12s ease;
+}
+
+.botao:hover {
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.botao:active {
+    background-color: rgb(233, 233, 233);
+}
+
+#nome {
+    grid-column: 2 / 5;
+}
+
+#email {
+    grid-column: 2 / 5;
+}
+
+#cep {
+    grid-column: 2 / 5;
+}
+
+#cidade {
+    grid-column: 2 / 3;
+}
+
+#uf {
+    width: 10%;
+}
+
+#endereco {
+    grid-column: 2 / 5;
+}
+
+#numero {
+    grid-column: 2 / 3;
+}
+
+#salvar-info {
+    grid-column: 1 / 5;
+}
+
+h1 {
+    margin: 0;
+    grid-column: 1 / 5;
+}
+

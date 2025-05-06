@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link href="../Estilos/store.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f3f3f3, #f3f3f3);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+        #content {
+            text-align: center;
+            padding: 50px;
+        }
+
+        #texto {
+            color: #4c4d4d;
+            font-size: 40px;
+            margin-top: 20px;
+            max-width: 60%;
+        }
+
+        /* Estilos para posicionar o vídeo no canto superior direito */
+        #video {
+            position: absolute;
+            top: 50px;
+            right: 100px;
+            border-radius: 10px;
+            border: 2px solid #4c4d4d;
+        }
+
+        /* Estilos para o segundo texto */
+        #texto2 {
+            color: #4c4d4d;
+            font-size: 40px;
+            margin-top: 20px;
+            text-align: center;
+            clear: both; /* Garante que a quebra de linha ocorra no início do texto */
+        }
+
+        .botoes {
+    color: #fff;
+    font-size: 24px;
+    padding: 400px 250px; /* Aumentei a largura e altura dos botões */
+    margin-right: 60px; /* Aumentei a margem à direita para separar os botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 200px;
+    background-size: cover; /* Redimensiona a imagem para preencher o botão */
+    background-repeat: no-repeat;
+    background-position: center center; /* Centraliza a imagem no botão */
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+
+    /* Adiciona um filtro de escurecimento inicial */
+    filter: brightness(100%);
+}
+
+/* Adiciona o efeito de escurecimento no hover */
+.botoes:hover {
+    filter: brightness(90%); /* Pode ajustar o valor para tornar o efeito mais ou menos intenso */
+}
+
+
+.botoes:hover {
+    background-color: #555; /* Altera a cor de fundo ao passar o mouse por cima */
+}
+
+
+        /* Imagens de fundo para os botões */
+        .botao1 {
+            background-image: url('https://risnicfotografia.com.br/wp-content/uploads/2018/06/Retratos-Dr-Leonardo-3-683x1024.jpg'); 
+        }
+
+        .botao2 {
+            background-image: url('https://risnicfotografia.com.br/wp-content/uploads/2019/01/Retrato-M%C3%A9dico-10-683x1024.jpg'); 
+        
+        }
+            .botao3 {
+            background-image: url('https://risnicfotografia.com.br/wp-content/uploads/2019/01/Retrato-Corporativo-M%C3%A9dico-6-683x1024.jpg'); 
+        }
+    </style>    
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="../index.html">Boomkemon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../View/loja.html">Loja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../View/perfilUsuario.php">Perfil</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div id="content">
+        <!-- Primeiro texto sobre reposição hormonal -->
+        <p id="texto">
+            A reposição hormonal é um tratamento médico que envolve a administração de hormônios para equilibrar os níveis hormonais no corpo. Seus benefícios incluem alívio dos sintomas da menopausa, prevenção da perda óssea, melhora da saúde cardiovascular, tratamento de condições médicas específicas e melhora a qualidade de vida. 
+        </p>
+        <br>
+
+        <!-- Segundo texto sobre riscos e supervisão médica -->
+        <p id="texto2">
+            No entanto, a decisão de usar a reposição hormonal deve ser tomada em consulta com um médico, pois há riscos e efeitos colaterais associados a essa terapia. A supervisão médica é fundamental para avaliar os benefícios individuais e garantir a segurança do tratamento.
+        </p>
+
+        <!-- Vídeo incorporado do YouTube -->
+        <iframe id="video" width="550" height="350" src="https://www.youtube.com/embed/uHP68qgVPyk" frameborder="0" allowfullscreen></iframe>
+
+        <button class="botoes botao1" onclick="window.location.href='https://wa.me/5541999262635?text=Ol%C3%A1+doutor+Leonardo%21+Me+ajude+a+ficar+GIGANTE!'"></button>
+        <button class="botoes botao2" onclick="window.location.href='https://wa.me/5541999154925?text=Ol%C3%A1+doutor+Luis%21+Me+ajude+a+ficar+GIGANTE!'"></button>
+        <button class="botoes botao3" onclick="window.location.href='https://wa.me/5541991511848?text=Ol%C3%A1+doutora+Lucia%21+Me+ajude+a+ficar+GIGANTE!'
+        "></button>
+    </div>
+</body>
+</html>
